@@ -1,0 +1,44 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Generated databases (reproducible from seed_db.py)
+data/lca.db
+data/lca.db-shm
+data/lca.db-wal
+
+# Large processed CSV (reproducible from preprocess.py)
+data/processed/lca_unified.csv
+
+# Raw archive CSVs (too large for git; add via DVC or cloud storage)
+archive/*.csv
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# Environment variables / secrets
+.env
+*.env
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
