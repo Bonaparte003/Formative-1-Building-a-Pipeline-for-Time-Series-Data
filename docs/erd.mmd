@@ -1,0 +1,35 @@
+erDiagram
+    periods ||--o{ cases : "has"
+    employers ||--o{ cases : "files"
+
+    periods {
+        int period_id PK
+        int fiscal_year
+        string quarter
+        date start_date
+        date end_date
+        timestamp created_at
+    }
+
+    employers {
+        int employer_id PK
+        string employer_name
+        string employer_location
+        string employer_country
+        timestamp created_at
+    }
+
+    cases {
+        bigint case_id PK
+        int period_id FK
+        int employer_id FK
+        string soc_title
+        string visa_class
+        string job_title
+        string full_time_position
+        string worksite
+        decimal wage
+        string unit_of_pay
+        string case_status
+        timestamp created_at
+    }
