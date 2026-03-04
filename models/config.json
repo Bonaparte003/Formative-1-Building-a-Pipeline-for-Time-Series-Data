@@ -1,0 +1,37 @@
+{
+  "feature_cols": [
+    "fiscal_year",
+    "median_wage_lag1",
+    "median_wage_lag2",
+    "median_wage_ma4",
+    "visa_class_enc",
+    "case_status_enc"
+  ],
+  "experiment_table": [
+    {
+      "experiment": "Ridge (alpha=1.0)",
+      "rmse": 32753.295793157966,
+      "mae": 23914.882078204762,
+      "r2": 0.06624677120507794
+    },
+    {
+      "experiment": "Ridge (alpha=10.0)",
+      "rmse": 32753.233704338236,
+      "mae": 23914.789283029506,
+      "r2": 0.0662503113423093
+    },
+    {
+      "experiment": "RandomForest (n_estimators=100)",
+      "rmse": 34301.84038583877,
+      "mae": 24067.082181719652,
+      "r2": -0.024134379598386824
+    },
+    {
+      "experiment": "RandomForest (n_estimators=200, max_depth=15)",
+      "rmse": 33933.063501361525,
+      "mae": 24019.48299471242,
+      "r2": -0.002231945763117693
+    }
+  ],
+  "best_experiment": "Ridge (alpha=10.0)"
+}
