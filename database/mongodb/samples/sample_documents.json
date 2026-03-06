@@ -1,0 +1,52 @@
+[
+  {
+    "_id": {"$oid": "507f1f77bcf86cd799439011"},
+    "case_id": 100001,
+    "period": {
+      "fiscal_year": 2022,
+      "quarter": "Q1",
+      "start_date": "2022-01-01",
+      "end_date": "2022-03-31"
+    },
+    "employer": {
+      "employer_name": "Example Corp",
+      "employer_location": "New York, New York",
+      "employer_country": "United States Of America"
+    },
+    "soc_title": "Software Developers, Applications",
+    "visa_class": "H-1B",
+    "job_title": "Software Engineer",
+    "full_time_position": "Y",
+    "worksite": "New York, New York",
+    "wage": 120000.0,
+    "unit_of_pay": "Year",
+    "case_status": "Certified",
+    "created_at": {"$date": "2022-02-15T00:00:00.000Z"},
+    "cached_at": {"$date": "2025-03-01T12:00:00.000Z"}
+  },
+  {
+    "_id": {"$oid": "507f1f77bcf86cd799439012"},
+    "case_id": 100002,
+    "period": {
+      "fiscal_year": 2021,
+      "quarter": "Q4",
+      "start_date": "2021-10-01",
+      "end_date": "2021-12-31"
+    },
+    "employer": {
+      "employer_name": "Tech Solutions Inc",
+      "employer_location": "San Jose, California",
+      "employer_country": "United States Of America"
+    },
+    "soc_title": "Computer Systems Analysts",
+    "visa_class": "H-1B",
+    "job_title": "Senior Systems Analyst",
+    "full_time_position": "Y",
+    "worksite": "San Jose, California",
+    "wage": 106933.0,
+    "unit_of_pay": "Year",
+    "case_status": "Certified",
+    "created_at": {"$date": "2021-11-20T00:00:00.000Z"},
+    "cached_at": {"$date": "2025-03-01T12:00:00.000Z"}
+  }
+]
