@@ -6,6 +6,7 @@ Group assignment: time-series data preprocessing, modeling, and database design 
 
 LCA (Labor Condition Application) data by fiscal year (`archive/LCA_FY_2017.csv` … `LCA_FY_2022.csv`). Time dimension: **fiscal year + quarter**. Prediction target: e.g. **Prevailing Wage** (regression) or **Case Status** (classification).
 
+[DatasetLink](https://www.kaggle.com/datasets/jishnukoliyadan/lca-programs-h1b-h1b1-e3-visa-petitions)
 ## Architecture
 
 - **MySQL**: main database (source of truth) – 3 tables: `periods`, `employers`, `cases`. See `docs/ERD.md` and `database/sql/schema.sql`.
